@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bovaro</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--ink:#1d2a2a;--mute:#5d6b6b;--acc:#0f6b64;--line:#e5e0d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101716;--card:#172120;--ink:#eef3f1;--mute:#9fb0ad;--acc:#4fd1c5;--line:#263433}}
+:root[data-theme="dark"]{--bg:#101716;--card:#172120;--ink:#eef3f1;--mute:#9fb0ad;--acc:#4fd1c5;--line:#263433}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font:600 15px system-ui,sans-serif}
+.logo{font:700 24px Georgia,serif;letter-spacing:.5px;color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:20px}
+.hero{padding:70px 0 50px;text-align:center}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:0 0 18px;font-weight:700}
+.hero p{max-width:600px;margin:0 auto 28px;color:var(--mute)}
+.btn{display:inline-block;background:var(--acc);color:var(--bg);padding:13px 28px;border-radius:8px;text-decoration:none;font:600 16px system-ui,sans-serif}
+h2{font-size:30px;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 28px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.c h3{margin:0 0 6px;font-size:19px}
+.c p{margin:0;color:var(--mute);font-size:15.5px}
+.n{font:700 13px system-ui,sans-serif;color:var(--acc);letter-spacing:1px;margin-bottom:8px;display:block}
+.read .c{border-left:4px solid var(--acc)}
+.tag{font:600 12px system-ui,sans-serif;color:var(--acc);text-transform:uppercase;letter-spacing:1px}
+.note{text-align:center;color:var(--mute);font-size:16px}
+.note b{color:var(--ink);font-weight:600}
+.steps{counter-reset:s;display:grid;gap:14px}
+.step{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.step:before{counter-increment:s;content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:var(--acc);color:var(--bg);display:grid;place-items:center;font:700 16px system-ui,sans-serif}
+.step h3{margin:0 0 4px;font-size:18px}.step p{margin:0;color:var(--mute);font-size:15.5px}
+.art{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px;margin-bottom:16px}
+.art h3{margin:6px 0 10px;font-size:22px}.art p{margin:0 0 10px;color:var(--mute)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin:10px 0 0;color:var(--mute);font-size:16px}
+dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px}
+dt{font-weight:700;color:var(--acc)}dd{margin:0 0 6px;color:var(--mute);font-size:15.5px}
+footer{padding:34px 0;border-top:1px solid var(--line);text-align:center;color:var(--mute);font:14px system-ui,sans-serif}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><span class="logo">Bovaro</span><div><a href="#features">Overview</a><a href="#learn">Read &amp; Learn</a></div></nav>
+
+<header class="hero">
+<h1>Experience excellence without compromise.</h1>
+<p>Bovaro is a place to understand how things work before you begin: clear guides, plain explanations and a calm, easy start.</p>
+<a class="btn" href="#learn">Begin Your Journey</a>
+</header>
+
+<section id="features">
+<h2>Why Bovaro</h2>
+<p class="sub">A quick look at what to expect.</p>
+<div class="grid">
+<div class="c"><span class="n">01</span><h3>Simple Signup, Instant Access</h3><p>A short first step, so you can get to the reading and learning without delay.</p></div>
+<div class="c"><span class="n">02</span><h3>Designed for Everyday Fun</h3><p>Built for ordinary moments: light, easy to follow and never overwhelming.</p></div>
+<div class="c"><span class="n">03</span><h3>Enjoy Anytime, Anywhere</h3><p>Works across phone, tablet and desktop, wherever you happen to be.</p></div>
+<div class="c"><span class="n">04</span><h3>Entertainment Without Limits</h3><p>A wide range of topics to explore at your own pace.</p></div>
+<div class="c"><span class="n">05</span><h3>Smooth Gameplay &amp; Service</h3><p>Stable performance and dependable support behind every session.</p></div>
+<div class="c"><span class="n">06</span><h3>Premium Feel, Smooth Play</h3><p>Clean visuals and a polished flow from start to finish.</p></div>
+</div>
+<p class="note" style="margin-top:28px"><b>Smooth Gameplay Experience</b> starts with understanding the basics.</p>
+</section>
+
+<section id="learn" class="read">
+<h2>Read &amp; Learn</h2>
+<p class="sub">Short reads to help you get comfortable first.</p>
+<div class="grid">
+<div class="c"><span class="tag">Guide · 4 min</span><h3>Getting started</h3><p>What an account is, what you need to set one up, and how to keep your details safe.</p></div>
+<div class="c"><span class="tag">Basics · 5 min</span><h3>How it all works</h3><p>A plain-language walkthrough of the main features, rules and terms before you try anything.</p></div>
+<div class="c"><span class="tag">Glossary · 3 min</span><h3>Common terms explained</h3><p>The words you will meet most often, defined simply with short examples.</p></div>
+<div class="c"><span class="tag">Tips · 4 min</span><h3>Healthy habits</h3><p>Setting time limits, taking breaks and keeping entertainment balanced with daily life.</p></div>
+</div>
+</section>
+
+<section id="steps">
+<h2>How it works</h2>
+<p class="sub">Four simple steps from curiosity to confidence.</p>
+<div class="steps">
+<div class="step"><div><h3>Read the basics</h3><p>Start with the short guides. Each one covers a single idea in plain language.</p></div></div>
+<div class="step"><div><h3>Create your account</h3><p>Simple Signup, Instant Access: a few details, and you are in.</p></div></div>
+<div class="step"><div><h3>Explore at your own pace</h3><p>Move through topics in any order. Nothing is timed and nothing is hidden.</p></div></div>
+<div class="step"><div><h3>Review and revisit</h3><p>Return to the glossary and guides whenever you want a refresher.</p></div></div>
+</div>
+</section>
+
+<section id="articles" class="read">
+<h2>From the reading room</h2>
+<p class="sub">Longer pieces for those who like to understand the details.</p>
+<div class="art"><span class="tag">Article · 6 min</span><h3>Why understanding comes before playing</h3><p>Anyone who has opened a new app or game knows the feeling of clicking around without a plan. A few minutes of reading first changes that. You learn what each control does, what the terms mean and where to find help if something is unclear.</p><p>People who read a short overview tend to feel calmer and make fewer mistakes. That is the idea behind everything on Bovaro: explain first, then explore.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>What makes a service feel smooth</h3><p>Smoothness is rarely one big feature. It is many small things done well: pages that load quickly, menus that behave predictably, clear wording, and support that answers when needed.</p><p>When these details are right, you stop noticing the technology and simply enjoy what you came for.</p></div>
+<div class="art"><span class="tag">Article · 5 min</span><h3>Keeping entertainment in balance</h3><p>Entertainment works best as one part of a full day. Setting a time limit before you start, taking short breaks and stepping away when you feel tired are simple habits that keep things enjoyable.</p><p>If it ever stops feeling like fun, that is a good sign to pause and do something else.</p></div>
+</section>
+
+<section id="glossary">
+<h2>Glossary</h2>
+<p class="sub">Terms you will see often, in simple words.</p>
+<dl>
+<dt>Account</dt><dd>Your personal profile, used to sign in and save your preferences.</dd>
+<dt>Session</dt><dd>One continuous period of use, from sign-in to sign-out.</dd>
+<dt>Profile</dt><dd>The details and settings attached to your account.</dd>
+<dt>Verification</dt><dd>A quick check that confirms the account belongs to you.</dd>
+<dt>Terms</dt><dd>The written rules that explain how the service may be used.</dd>
+<dt>Support</dt><dd>The team and resources that help when you have a question.</dd>
+</dl>
+</section>
+
+<section id="faq">
+<h2>Questions, answered</h2>
+<p class="sub">Short answers to common questions.</p>
+<details><summary>Do I need to read everything first?</summary><p>No. The guides are optional and short, so read only what is useful to you.</p></details>
+<details><summary>How long does signup take?</summary><p>Only a few minutes. You enter basic details and confirm them.</p></details>
+<details><summary>Can I use Bovaro on my phone?</summary><p>Yes. The pages adjust to phones, tablets and computers.</p></details>
+<details><summary>Where can I find help?</summary><p>The glossary and guides explain most things, and the support team is there for the rest.</p></details>
+<details><summary>Is the reading material free?</summary><p>Yes. All guides, articles and the glossary are open to read.</p></details>
+</section>
+
+<section>
+<p class="note"><b>Act fast – limited time, unlimited value.</b><br>Shop now and enjoy instant rewards.</p>
+<p style="text-align:center;margin-top:24px"><a class="btn" href="#features">Begin Your Journey</a></p>
+</section>
+
+<footer>© 2026 Bovaro · Experience excellence without compromise.</footer>
+</div>
+</body>
+</html>
